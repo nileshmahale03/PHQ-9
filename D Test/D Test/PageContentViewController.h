@@ -1,0 +1,17 @@
+//
+//  PageContentViewController.h
+//  D Test
+//
+//  Created by Nilesh Mahale on 8/27/15.
+//  Copyright (c) 2015 Nilesh Mahale. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface PageContentViewController : UIViewController
+
+@property (strong, nonatomic) IBOutlet UILabel *questionLabel;
+@property NSUInteger pageIndex;
+@property NSString *questionText;
+
+@end
