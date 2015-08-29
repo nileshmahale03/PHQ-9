@@ -13,12 +13,26 @@
 @end
 
 @implementation PageContentViewController
+@synthesize checkBoxButtonOne;
+@synthesize checkBoxButtonTwo;
+@synthesize checkBoxButtonThree;
+@synthesize checkBoxButtonFour;
+
+@synthesize textBoxLabelOne;
+@synthesize textBoxLabelTwo;
+@synthesize textBoxLabelThree;
+@synthesize textBoxLabelFour;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
     self.questionLabel.text = self.questionText;
+    
+    checkedOne = NO;
+    checkedTwo = NO;
+    checkedThree = NO;
+    checkedFour = NO;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,4 +50,84 @@
 }
 */
 
+- (IBAction)checkBoxActionOne:(id)sender {
+    if (!checkedOne) {
+        [checkBoxButtonOne setImage:[UIImage imageNamed:@"MarkedCheckBox.png"] forState:UIControlStateNormal];
+        [checkBoxButtonTwo setImage:[UIImage imageNamed:@"BlankedCheckBox.png"] forState:UIControlStateNormal];
+        [checkBoxButtonThree setImage:[UIImage imageNamed:@"BlankedCheckBox.png"] forState:UIControlStateNormal];
+        [checkBoxButtonFour setImage:[UIImage imageNamed:@"BlankedCheckBox.png"] forState:UIControlStateNormal];
+        checkedOne = YES;
+        textBoxLabelOne.textColor = [UIColor colorWithRed:231.0/255.0 green:95.0/255.0 blue:53.0/255.0 alpha:1];
+        textBoxLabelTwo.textColor = [UIColor lightGrayColor];
+        textBoxLabelThree.textColor = [UIColor lightGrayColor];
+        textBoxLabelFour.textColor = [UIColor lightGrayColor];
+    } else {
+        [checkBoxButtonOne setImage:[UIImage imageNamed:@"BlankedCheckBox.png"] forState:UIControlStateNormal];
+        checkedOne = NO;
+    }
+}
+
+- (IBAction)checkBoxActionTwo:(id)sender {
+    if (!checkedTwo) {
+        [checkBoxButtonOne setImage:[UIImage imageNamed:@"BlankedCheckBox.png"] forState:UIControlStateNormal];
+        [checkBoxButtonTwo setImage:[UIImage imageNamed:@"MarkedCheckBox.png"] forState:UIControlStateNormal];
+        [checkBoxButtonThree setImage:[UIImage imageNamed:@"BlankedCheckBox.png"] forState:UIControlStateNormal];
+        [checkBoxButtonFour setImage:[UIImage imageNamed:@"BlankedCheckBox.png"] forState:UIControlStateNormal];
+        checkedTwo = YES;
+        textBoxLabelOne.textColor = [UIColor lightGrayColor];
+        textBoxLabelTwo.textColor = [UIColor colorWithRed:231.0/255.0 green:95.0/255.0 blue:53.0/255.0 alpha:1];
+        textBoxLabelThree.textColor = [UIColor lightGrayColor];
+        textBoxLabelFour.textColor = [UIColor lightGrayColor];
+    } else {
+        [checkBoxButtonTwo setImage:[UIImage imageNamed:@"BlankedCheckBox.png"] forState:UIControlStateNormal];
+        checkedTwo = NO;
+    }
+}
+
+- (IBAction)checkBoxActionThree:(id)sender {
+    if (!checkedThree) {
+        [checkBoxButtonOne setImage:[UIImage imageNamed:@"BlankedCheckBox.png"] forState:UIControlStateNormal];
+        [checkBoxButtonTwo setImage:[UIImage imageNamed:@"BlankedCheckBox.png"] forState:UIControlStateNormal];
+        [checkBoxButtonThree setImage:[UIImage imageNamed:@"MarkedCheckBox.png"] forState:UIControlStateNormal];
+        [checkBoxButtonFour setImage:[UIImage imageNamed:@"BlankedCheckBox.png"] forState:UIControlStateNormal];
+        checkedThree = YES;
+        textBoxLabelOne.textColor = [UIColor lightGrayColor];
+        textBoxLabelTwo.textColor = [UIColor lightGrayColor];
+        textBoxLabelThree.textColor = [UIColor colorWithRed:231.0/255.0 green:95.0/255.0 blue:53.0/255.0 alpha:1];
+        textBoxLabelFour.textColor = [UIColor lightGrayColor];
+    } else {
+        [checkBoxButtonThree setImage:[UIImage imageNamed:@"BlankedCheckBox.png"] forState:UIControlStateNormal];
+        checkedThree = NO;
+    }
+}
+
+- (IBAction)checkBoxActionFour:(id)sender {
+    if (!checkedFour) {
+        [checkBoxButtonOne setImage:[UIImage imageNamed:@"BlankedCheckBox.png"] forState:UIControlStateNormal];
+        [checkBoxButtonTwo setImage:[UIImage imageNamed:@"BlankedCheckBox.png"] forState:UIControlStateNormal];
+        [checkBoxButtonThree setImage:[UIImage imageNamed:@"BlankedCheckBox.png"] forState:UIControlStateNormal];
+        [checkBoxButtonFour setImage:[UIImage imageNamed:@"MarkedCheckBox.png"] forState:UIControlStateNormal];
+        checkedFour = YES;
+        textBoxLabelOne.textColor = [UIColor lightGrayColor];
+        textBoxLabelTwo.textColor = [UIColor lightGrayColor];
+        textBoxLabelThree.textColor = [UIColor lightGrayColor];
+        textBoxLabelFour.textColor = [UIColor colorWithRed:231.0/255.0 green:95.0/255.0 blue:53.0/255.0 alpha:1];
+    } else {
+        [checkBoxButtonFour setImage:[UIImage imageNamed:@"BlankedCheckBox.png"] forState:UIControlStateNormal];
+        checkedFour = NO;
+    }
+}
+
+
 @end
+
+
+
+
+
+
+
+
+
+
+

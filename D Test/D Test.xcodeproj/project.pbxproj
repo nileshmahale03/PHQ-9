@@ -25,6 +25,8 @@
 		274EA1F31B8EE3EF00AE3E87 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274EA1F21B8EE3EF00AE3E87 /* StartViewController.m */; };
 		2774455D1B903C45007A20E2 /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2774455C1B903C45007A20E2 /* PageContentViewController.m */; };
 		27C53C2C1B9229BC0058082F /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C53C2B1B9229BC0058082F /* QuestionViewController.m */; };
+		27C53C2F1B922F2D0058082F /* MarkedCheckBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C53C2D1B922F2D0058082F /* MarkedCheckBox.png */; };
+		27C53C301B922F2D0058082F /* BlankedCheckBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C53C2E1B922F2D0058082F /* BlankedCheckBox.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		2774455C1B903C45007A20E2 /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
 		27C53C2A1B9229BC0058082F /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionViewController.h; sourceTree = "<group>"; };
 		27C53C2B1B9229BC0058082F /* QuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionViewController.m; sourceTree = "<group>"; };
+		27C53C2D1B922F2D0058082F /* MarkedCheckBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MarkedCheckBox.png; sourceTree = "<group>"; };
+		27C53C2E1B922F2D0058082F /* BlankedCheckBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlankedCheckBox.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +167,8 @@
 		274EA1DE1B8ED89A00AE3E87 /* Bar Icons */ = {
 			isa = PBXGroup;
 			children = (
+				27C53C2D1B922F2D0058082F /* MarkedCheckBox.png */,
+				27C53C2E1B922F2D0058082F /* BlankedCheckBox.png */,
 				274EA1E71B8ED93100AE3E87 /* History.png */,
 				274EA1E81B8ED93100AE3E87 /* Info.png */,
 				274EA1EF1B8EDB7000AE3E87 /* pen.png */,
@@ -258,7 +264,9 @@
 				274EA1EC1B8ED93100AE3E87 /* Info.png in Resources */,
 				274EA1C31B8ED13100AE3E87 /* LaunchScreen.xib in Resources */,
 				274EA1F01B8EDB7000AE3E87 /* pen.png in Resources */,
+				27C53C301B922F2D0058082F /* BlankedCheckBox.png in Resources */,
 				274EA1C01B8ED13100AE3E87 /* Images.xcassets in Resources */,
+				27C53C2F1B922F2D0058082F /* MarkedCheckBox.png in Resources */,
 				274EA1EE1B8ED93100AE3E87 /* Test.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
