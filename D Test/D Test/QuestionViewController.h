@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "PageContentViewController.h"
+#import "ResultViewController.h"
 
 @interface QuestionViewController : UIViewController <UIPageViewControllerDataSource>
 

@@ -49,15 +49,17 @@
     
     PageContentViewController *startingViewController = [self viewControllerAtIndex:0];
     NSArray *viewControllers = @[startingViewController];
-    [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
+    [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
     
-    //chnage the size of the page view controller
+    // change the size of the page view controller
     self.pageViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
     
     [self addChildViewController:_pageViewController];
     [self.view addSubview:_pageViewController.view];
     [self.pageViewController didMoveToParentViewController:self];
+    
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -77,6 +79,7 @@
     }
     
     index --;
+
     return [self viewControllerAtIndex:index];
 }
 
@@ -89,9 +92,11 @@
     
     index ++;
     
+    // After last question go to result page
     if (index == [self.questionTitles count]) {
-        return  nil;
+        NSLog(@"This is last page");
     }
+    
     return [self viewControllerAtIndex:index];
 }
 
@@ -107,6 +112,7 @@
     
     return pageContentViewController;
 }
+
 
 - (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController {
     return [self.questionTitles count];

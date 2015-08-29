@@ -16,7 +16,6 @@
 		274EA1C31B8ED13100AE3E87 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 274EA1C11B8ED13100AE3E87 /* LaunchScreen.xib */; };
 		274EA1CF1B8ED13100AE3E87 /* D_TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 274EA1CE1B8ED13100AE3E87 /* D_TestTests.m */; };
 		274EA1DA1B8ED4FE00AE3E87 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274EA1D91B8ED4FE00AE3E87 /* HistoryViewController.m */; };
-		274EA1DD1B8ED50E00AE3E87 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274EA1DC1B8ED50E00AE3E87 /* InfoViewController.m */; };
 		274EA1EB1B8ED93100AE3E87 /* History.png in Resources */ = {isa = PBXBuildFile; fileRef = 274EA1E71B8ED93100AE3E87 /* History.png */; };
 		274EA1EC1B8ED93100AE3E87 /* Info.png in Resources */ = {isa = PBXBuildFile; fileRef = 274EA1E81B8ED93100AE3E87 /* Info.png */; };
 		274EA1ED1B8ED93100AE3E87 /* Results.png in Resources */ = {isa = PBXBuildFile; fileRef = 274EA1E91B8ED93100AE3E87 /* Results.png */; };
@@ -24,6 +23,7 @@
 		274EA1F01B8EDB7000AE3E87 /* pen.png in Resources */ = {isa = PBXBuildFile; fileRef = 274EA1EF1B8EDB7000AE3E87 /* pen.png */; };
 		274EA1F31B8EE3EF00AE3E87 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274EA1F21B8EE3EF00AE3E87 /* StartViewController.m */; };
 		2774455D1B903C45007A20E2 /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2774455C1B903C45007A20E2 /* PageContentViewController.m */; };
+		27A938521B927292007B7675 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A938511B927292007B7675 /* InfoViewController.m */; };
 		27C53C2C1B9229BC0058082F /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C53C2B1B9229BC0058082F /* QuestionViewController.m */; };
 		27C53C2F1B922F2D0058082F /* MarkedCheckBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C53C2D1B922F2D0058082F /* MarkedCheckBox.png */; };
 		27C53C301B922F2D0058082F /* BlankedCheckBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 27C53C2E1B922F2D0058082F /* BlankedCheckBox.png */; };
@@ -57,8 +57,6 @@
 		274EA1CE1B8ED13100AE3E87 /* D_TestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = D_TestTests.m; sourceTree = "<group>"; };
 		274EA1D81B8ED4FE00AE3E87 /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
 		274EA1D91B8ED4FE00AE3E87 /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
-		274EA1DB1B8ED50E00AE3E87 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
-		274EA1DC1B8ED50E00AE3E87 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 		274EA1E71B8ED93100AE3E87 /* History.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = History.png; sourceTree = "<group>"; };
 		274EA1E81B8ED93100AE3E87 /* Info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Info.png; sourceTree = "<group>"; };
 		274EA1E91B8ED93100AE3E87 /* Results.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Results.png; sourceTree = "<group>"; };
@@ -68,6 +66,8 @@
 		274EA1F21B8EE3EF00AE3E87 /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StartViewController.m; path = ../StartViewController.m; sourceTree = "<group>"; };
 		2774455B1B903C45007A20E2 /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
 		2774455C1B903C45007A20E2 /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
+		27A938501B927292007B7675 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InfoViewController.h; path = ../InfoViewController.h; sourceTree = "<group>"; };
+		27A938511B927292007B7675 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InfoViewController.m; path = ../InfoViewController.m; sourceTree = "<group>"; };
 		27C53C2A1B9229BC0058082F /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionViewController.h; sourceTree = "<group>"; };
 		27C53C2B1B9229BC0058082F /* QuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionViewController.m; sourceTree = "<group>"; };
 		27C53C2D1B922F2D0058082F /* MarkedCheckBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MarkedCheckBox.png; sourceTree = "<group>"; };
@@ -120,17 +120,17 @@
 				274EA1B71B8ED13100AE3E87 /* TestViewController.m */,
 				274EA1F11B8EE3EF00AE3E87 /* StartViewController.h */,
 				274EA1F21B8EE3EF00AE3E87 /* StartViewController.m */,
+				27C53C2A1B9229BC0058082F /* QuestionViewController.h */,
+				27C53C2B1B9229BC0058082F /* QuestionViewController.m */,
 				2774455B1B903C45007A20E2 /* PageContentViewController.h */,
 				2774455C1B903C45007A20E2 /* PageContentViewController.m */,
 				274EA1B91B8ED13100AE3E87 /* ResultViewController.h */,
 				274EA1BA1B8ED13100AE3E87 /* ResultViewController.m */,
 				274EA1D81B8ED4FE00AE3E87 /* HistoryViewController.h */,
 				274EA1D91B8ED4FE00AE3E87 /* HistoryViewController.m */,
-				274EA1DB1B8ED50E00AE3E87 /* InfoViewController.h */,
-				274EA1DC1B8ED50E00AE3E87 /* InfoViewController.m */,
+				27A938501B927292007B7675 /* InfoViewController.h */,
+				27A938511B927292007B7675 /* InfoViewController.m */,
 				274EA1BC1B8ED13100AE3E87 /* Main.storyboard */,
-				27C53C2A1B9229BC0058082F /* QuestionViewController.h */,
-				27C53C2B1B9229BC0058082F /* QuestionViewController.m */,
 				274EA1BF1B8ED13100AE3E87 /* Images.xcassets */,
 				274EA1C11B8ED13100AE3E87 /* LaunchScreen.xib */,
 				274EA1AF1B8ED13100AE3E87 /* Supporting Files */,
@@ -287,7 +287,7 @@
 			files = (
 				274EA1BB1B8ED13100AE3E87 /* ResultViewController.m in Sources */,
 				274EA1B51B8ED13100AE3E87 /* AppDelegate.m in Sources */,
-				274EA1DD1B8ED50E00AE3E87 /* InfoViewController.m in Sources */,
+				27A938521B927292007B7675 /* InfoViewController.m in Sources */,
 				274EA1F31B8EE3EF00AE3E87 /* StartViewController.m in Sources */,
 				274EA1B81B8ED13100AE3E87 /* TestViewController.m in Sources */,
 				27C53C2C1B9229BC0058082F /* QuestionViewController.m in Sources */,
