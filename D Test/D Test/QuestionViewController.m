@@ -7,6 +7,7 @@
 //
 
 #import "QuestionViewController.h"
+#import "PageContentViewController.h"
 
 @interface QuestionViewController ()
 

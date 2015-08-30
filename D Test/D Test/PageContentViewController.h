@@ -29,9 +29,14 @@
 @property (strong, nonatomic) IBOutlet UILabel *textBoxLabelThree;
 @property (strong, nonatomic) IBOutlet UILabel *textBoxLabelFour;
 
+@property (strong, nonatomic) IBOutlet UIButton *goToResultButton;
+
 - (IBAction)checkBoxActionOne:(id)sender;
 - (IBAction)checkBoxActionTwo:(id)sender;
 - (IBAction)checkBoxActionThree:(id)sender;
 - (IBAction)checkBoxActionFour:(id)sender;
+
+- (IBAction)goToButtonAction:(id)sender;
+
 
 @end

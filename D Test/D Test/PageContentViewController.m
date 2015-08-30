@@ -7,6 +7,7 @@
 //
 
 #import "PageContentViewController.h"
+#import "ResultViewController.h"
 
 @interface PageContentViewController ()
 
@@ -23,6 +24,8 @@
 @synthesize textBoxLabelThree;
 @synthesize textBoxLabelFour;
 
+@synthesize goToResultButton;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -33,6 +36,8 @@
     checkedTwo = NO;
     checkedThree = NO;
     checkedFour = NO;
+    
+    goToResultButton.hidden = NO;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -116,6 +121,10 @@
         [checkBoxButtonFour setImage:[UIImage imageNamed:@"BlankedCheckBox.png"] forState:UIControlStateNormal];
         checkedFour = NO;
     }
+}
+
+- (IBAction)goToButtonAction:(id)sender {
+    NSLog(@"button pressed");
 }
 
 

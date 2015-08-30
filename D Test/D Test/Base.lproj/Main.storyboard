@@ -260,6 +260,21 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WrF-iz-tJo">
+                                <rect key="frame" x="218" y="518" width="86" height="30"/>
+                                <color key="backgroundColor" red="0.90588235289999997" green="0.37254901959999998" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="86" id="K5f-gu-d3Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="15"/>
+                                <state key="normal" title="Go to Result">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToButtonAction:" destination="KaZ-Qx-gkb" eventType="touchUpInside" id="LPU-Hl-sfo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -267,6 +282,7 @@
                             <constraint firstItem="q6o-0h-Rrq" firstAttribute="bottom" secondItem="zYs-1c-uzA" secondAttribute="bottom" id="4qQ-T1-AzU"/>
                             <constraint firstItem="Bte-ub-i4e" firstAttribute="bottom" secondItem="dVQ-nr-S54" secondAttribute="bottom" id="64g-OV-eMu"/>
                             <constraint firstItem="Bte-ub-i4e" firstAttribute="top" secondItem="dVQ-nr-S54" secondAttribute="top" id="8Yl-h5-i1O"/>
+                            <constraint firstItem="WrF-iz-tJo" firstAttribute="top" secondItem="Bte-ub-i4e" secondAttribute="bottom" constant="56" id="CfC-Ea-TZc"/>
                             <constraint firstItem="dVQ-nr-S54" firstAttribute="top" secondItem="e2f-qO-hWO" secondAttribute="bottom" constant="8" symbolic="YES" id="Dic-hT-L21"/>
                             <constraint firstItem="e2f-qO-hWO" firstAttribute="trailing" secondItem="DTU-Tk-W2p" secondAttribute="trailing" id="DpR-Qa-N0l"/>
                             <constraint firstItem="UBd-WG-yO6" firstAttribute="trailing" secondItem="2dc-fv-y5D" secondAttribute="trailing" id="KXg-km-Kl6"/>
@@ -280,12 +296,14 @@
                             <constraint firstItem="dVQ-nr-S54" firstAttribute="leading" secondItem="e2f-qO-hWO" secondAttribute="leading" id="bXn-5E-LAb"/>
                             <constraint firstItem="UBd-WG-yO6" firstAttribute="top" secondItem="e2f-qO-hWO" secondAttribute="top" id="cLF-74-Rl4"/>
                             <constraint firstItem="2dc-fv-y5D" firstAttribute="top" secondItem="DTU-Tk-W2p" secondAttribute="top" id="gai-r3-8sc"/>
+                            <constraint firstAttribute="bottom" secondItem="WrF-iz-tJo" secondAttribute="bottom" constant="20" symbolic="YES" id="hCh-gY-3hi"/>
                             <constraint firstItem="UBd-WG-yO6" firstAttribute="top" secondItem="2dc-fv-y5D" secondAttribute="bottom" constant="8" symbolic="YES" id="i8Q-Nn-Ge5"/>
                             <constraint firstItem="DTU-Tk-W2p" firstAttribute="trailing" secondItem="zYs-1c-uzA" secondAttribute="trailing" id="io5-Tc-1OH"/>
                             <constraint firstItem="2dc-fv-y5D" firstAttribute="leading" secondItem="q6o-0h-Rrq" secondAttribute="leading" id="jp4-Mw-ZPQ"/>
                             <constraint firstItem="zYs-1c-uzA" firstAttribute="top" secondItem="WSk-C4-V18" secondAttribute="bottom" constant="57" id="kEh-xg-Izw"/>
                             <constraint firstItem="DTU-Tk-W2p" firstAttribute="leading" secondItem="e2f-qO-hWO" secondAttribute="leading" id="or7-ps-GoW"/>
                             <constraint firstItem="zYs-1c-uzA" firstAttribute="top" secondItem="q6o-0h-Rrq" secondAttribute="top" id="rNM-7H-7cQ"/>
+                            <constraint firstItem="WrF-iz-tJo" firstAttribute="trailing" secondItem="uzE-Rb-Er4" secondAttribute="trailingMargin" id="rlY-Xt-isk"/>
                             <constraint firstItem="DTU-Tk-W2p" firstAttribute="leading" secondItem="zYs-1c-uzA" secondAttribute="leading" id="sTR-6O-QPf"/>
                             <constraint firstItem="e2f-qO-hWO" firstAttribute="trailing" secondItem="dVQ-nr-S54" secondAttribute="trailing" id="t28-5f-kDb"/>
                             <constraint firstItem="WSk-C4-V18" firstAttribute="leading" secondItem="uzE-Rb-Er4" secondAttribute="leadingMargin" constant="26" id="tte-Mg-H0D"/>
@@ -300,6 +318,7 @@
                         <outlet property="checkBoxButtonOne" destination="zYs-1c-uzA" id="wJY-bH-99r"/>
                         <outlet property="checkBoxButtonThree" destination="e2f-qO-hWO" id="NPc-Dl-abK"/>
                         <outlet property="checkBoxButtonTwo" destination="DTU-Tk-W2p" id="W0X-Vd-7vJ"/>
+                        <outlet property="goToResultButton" destination="WrF-iz-tJo" id="Hyn-yO-8qK"/>
                         <outlet property="questionLabel" destination="WSk-C4-V18" id="5va-F6-5Kk"/>
                         <outlet property="textBoxLabelFour" destination="Bte-ub-i4e" id="y0u-p5-rZV"/>
                         <outlet property="textBoxLabelOne" destination="q6o-0h-Rrq" id="CNR-TW-Rtg"/>
@@ -314,7 +333,6 @@
         <!--Info-->
         <scene sceneID="pS4-PP-L2P">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Aup-NR-lnP" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="BhO-Vb-rsL" customClass="InfoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3Zh-lO-CRs"/>
@@ -339,6 +357,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Info" id="7Xm-xb-3hR"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aup-NR-lnP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-4110" y="-1775"/>
         </scene>
@@ -421,6 +440,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JAQ-MX-Wpi" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="History" image="History.png" id="3Nv-dK-7ih"/>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="aXU-tg-2ar"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="KkP-1p-JNl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -437,7 +457,6 @@
         <!--Info-->
         <scene sceneID="v4f-1m-4IY">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0GP-0a-zhv" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RXh-2B-YIS" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Info" image="Info.png" id="hMT-aY-3Q6"/>
                     <toolbarItems/>
@@ -450,6 +469,7 @@
                         <segue destination="BhO-Vb-rsL" kind="relationship" relationship="rootViewController" id="yD5-WV-gmi"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0GP-0a-zhv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-4110" y="-2410"/>
         </scene>
