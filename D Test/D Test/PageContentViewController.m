@@ -11,6 +11,7 @@
 
 @interface PageContentViewController ()
 
+// @property (assign, readonly) NSUInteger pageIndex; 
 @end
 
 @implementation PageContentViewController
@@ -37,7 +38,7 @@
     checkedThree = NO;
     checkedFour = NO;
     
-    goToResultButton.hidden = NO;
+    goToResultButton.hidden = YES;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -69,6 +70,15 @@
     } else {
         [checkBoxButtonOne setImage:[UIImage imageNamed:@"BlankedCheckBox.png"] forState:UIControlStateNormal];
         checkedOne = NO;
+    }
+    
+    // if (self.pageIndex == self.maxIndex) {
+        // unhide the button
+    //}
+    
+    if (self.pageIndex == 8) {
+        NSLog(@"button");
+        self.goToResultButton.hidden = NO;
     }
 }
 
@@ -125,6 +135,9 @@
 
 - (IBAction)goToButtonAction:(id)sender {
     NSLog(@"button pressed");
+    //PageContentViewController *pageContentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageContentController"];
+    UIViewController *Uvc = [self.storyboard instantiateViewControllerWithIdentifier:@"ResultViewController"];
+    [self.tabBarController setSelectedViewController:Uvc];
 }
 
 

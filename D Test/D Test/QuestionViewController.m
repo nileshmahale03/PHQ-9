@@ -98,6 +98,7 @@
         NSLog(@"This is last page");
     }
     
+    //self.pageContentViewController.pageIndex = index;
     return [self viewControllerAtIndex:index];
 }
 

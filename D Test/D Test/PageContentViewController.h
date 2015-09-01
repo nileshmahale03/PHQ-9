@@ -15,6 +15,7 @@
     BOOL checkedFour;
 }
 
+
 @property (strong, nonatomic) IBOutlet UILabel *questionLabel;
 @property NSUInteger pageIndex;
 @property NSString *questionText;
