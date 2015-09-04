@@ -11,7 +11,7 @@
 
 @interface PageContentViewController ()
 
-// @property (assign, readonly) NSUInteger pageIndex; 
+
 @end
 
 @implementation PageContentViewController
@@ -70,14 +70,10 @@
     } else {
         [checkBoxButtonOne setImage:[UIImage imageNamed:@"BlankedCheckBox.png"] forState:UIControlStateNormal];
         checkedOne = NO;
+        textBoxLabelOne.textColor = [UIColor lightGrayColor];
     }
     
-    // if (self.pageIndex == self.maxIndex) {
-        // unhide the button
-    //}
-    
-    if (self.pageIndex == 8) {
-        NSLog(@"button");
+    if (self.pageIndex == 8) {    // how to calculate 8 programatically
         self.goToResultButton.hidden = NO;
     }
 }
@@ -96,6 +92,11 @@
     } else {
         [checkBoxButtonTwo setImage:[UIImage imageNamed:@"BlankedCheckBox.png"] forState:UIControlStateNormal];
         checkedTwo = NO;
+        textBoxLabelTwo.textColor = [UIColor lightGrayColor];
+    }
+    
+    if (self.pageIndex == 8) {    // how to calculate 8 programatically
+        self.goToResultButton.hidden = NO;
     }
 }
 
@@ -113,6 +114,11 @@
     } else {
         [checkBoxButtonThree setImage:[UIImage imageNamed:@"BlankedCheckBox.png"] forState:UIControlStateNormal];
         checkedThree = NO;
+        textBoxLabelThree.textColor = [UIColor lightGrayColor];
+    }
+    
+    if (self.pageIndex == 8) {    // how to calculate 8 programatically
+        self.goToResultButton.hidden = NO;
     }
 }
 
@@ -130,14 +136,20 @@
     } else {
         [checkBoxButtonFour setImage:[UIImage imageNamed:@"BlankedCheckBox.png"] forState:UIControlStateNormal];
         checkedFour = NO;
+        textBoxLabelFour.textColor = [UIColor lightGrayColor];
+    }
+    
+    if (self.pageIndex == 8) {    // how to calculate 8 programatically
+        self.goToResultButton.hidden = NO;
     }
 }
 
 - (IBAction)goToButtonAction:(id)sender {
     NSLog(@"button pressed");
-    //PageContentViewController *pageContentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageContentController"];
-    UIViewController *Uvc = [self.storyboard instantiateViewControllerWithIdentifier:@"ResultViewController"];
-    [self.tabBarController setSelectedViewController:Uvc];
+    UIViewController *destinationViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"ResultViewController"];
+    [destinationViewController setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
+    [self presentViewController:destinationViewController animated:YES completion:nil];
+//    [UIView transitionFromView:self.parentViewController.view toView:destinationViewController.view duration:0.9 options:UIViewAnimationOptionTransitionFlipFromLeft completion:nil];
 }
 
 

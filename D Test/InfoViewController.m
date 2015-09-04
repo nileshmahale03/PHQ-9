@@ -12,11 +12,14 @@
 
 @end
 
-@implementation InfoViewController
+@implementation InfoViewController {
+    NSArray *tableData;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    tableData = [NSArray arrayWithObjects:@"Message from the developer", @"About PHQ-9", @"How to use this app ?", @"App Credits", @"Depression sources", @"Send feedback", nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,4 +37,32 @@
 }
 */
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [tableData count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *tableIdentifier = @"tableIdentifier";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:tableIdentifier];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:tableIdentifier];
+    }
+    
+    cell.textLabel.text = [tableData objectAtIndex:indexPath.row];
+    
+    return cell;
+}
+
 @end
+
+
+
+
+
+
+
+
+
+
